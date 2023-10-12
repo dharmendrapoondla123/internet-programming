@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+ <html>
+    <head>
+        <body>
+            <input type="button" id="butt" value="change col">
+            <script>
+                let color=['red','orange','blue','green'];
+                let butt=document.getElementById('butt');
+                butt.addEventListener('click',function() {
+                  let randomColor=color[Math.floor(Math.random()*color.length)];
+                  document.body.style.background=randomColor;
+                });
+            </script>
+            <style>
+body {
+    background: red;
+
+}
+
+                #butt {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+                </style>
+        </body>
+    </head>
+ </html>
